@@ -1,0 +1,4 @@
+C:\Users\Asus\Desktop\slnGloaithNational\App.Exceptions\bin\Debug\App.Exceptions.dll
+C:\Users\Asus\Desktop\slnGloaithNational\App.Exceptions\bin\Debug\App.Exceptions.pdb
+C:\Users\Asus\Desktop\slnGloaithNational\App.Exceptions\obj\Debug\App.Exceptions.dll
+C:\Users\Asus\Desktop\slnGloaithNational\App.Exceptions\obj\Debug\App.Exceptions.pdb

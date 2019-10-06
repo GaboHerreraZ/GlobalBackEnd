@@ -1,0 +1,5 @@
+C:\Users\Asus\Desktop\slnGloaithNational\App.Exceptions\bin\Release\App.Exceptions.dll
+C:\Users\Asus\Desktop\slnGloaithNational\App.Exceptions\bin\Release\App.Exceptions.pdb
+C:\Users\Asus\Desktop\slnGloaithNational\App.Exceptions\obj\Release\App.Exceptions.csprojResolveAssemblyReference.cache
+C:\Users\Asus\Desktop\slnGloaithNational\App.Exceptions\obj\Release\App.Exceptions.dll
+C:\Users\Asus\Desktop\slnGloaithNational\App.Exceptions\obj\Release\App.Exceptions.pdb

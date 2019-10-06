@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GloaithNationalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="GloaithNationalEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ProductTransactions" EntityType="GloaithNationalModel.ProductTransaction" />
+    <EntitySet Name="Rates" EntityType="GloaithNationalModel.Rate" />
+    <EntitySet Name="Currencies" EntityType="GloaithNationalModel.Currency" />
+  </EntityContainer>
+  <EntityType Name="ProductTransaction">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Sku" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Amount" Type="Decimal" Precision="6" Scale="2" />
+    <Property Name="Currency" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Rate">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Origin" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="Target" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="Value" Type="Decimal" Precision="4" Scale="2" />
+  </EntityType>
+  <EntityType Name="Currency">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Origin" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="Target" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="Value" Type="Decimal" Precision="4" Scale="2" />
+  </EntityType>
+</Schema>

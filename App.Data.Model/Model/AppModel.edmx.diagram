@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="21881d59bc9a4e99ad7c72788dfeaa80" Name="Diagram1" >
+        <EntityTypeShape EntityType="GloaithNationalModel.Rate1" Width="1.5" PointX="0.75" PointY="5.75" />
+        <EntityTypeShape EntityType="GloaithNationalModel.Transaction1" Width="1.5" PointX="8.75" PointY="0.75" />
+        <EntityTypeShape EntityType="GloaithNationalModel.Address" Width="1.5" PointX="3.75" PointY="8.125" />
+        <EntityTypeShape EntityType="GloaithNationalModel.Customer" Width="1.5" PointX="6.75" PointY="1.75" />
+        <EntityTypeShape EntityType="GloaithNationalModel.CustomerAddress" Width="1.5" PointX="9" PointY="8.625" />
+        <EntityTypeShape EntityType="GloaithNationalModel.Product" Width="1.5" PointX="9" PointY="14.375" />
+        <EntityTypeShape EntityType="GloaithNationalModel.ProductCategory" Width="1.5" PointX="6.75" PointY="14" />
+        <EntityTypeShape EntityType="GloaithNationalModel.ProductDescription" Width="1.5" PointX="6.75" PointY="20.5" />
+        <EntityTypeShape EntityType="GloaithNationalModel.ProductModel" Width="1.5" PointX="6.75" PointY="17.375" />
+        <EntityTypeShape EntityType="GloaithNationalModel.ProductModelProductDescription" Width="1.5" PointX="9" PointY="20.375" />
+        <EntityTypeShape EntityType="GloaithNationalModel.SalesOrderDetail" Width="1.5" PointX="11.25" PointY="8.25" />
+        <EntityTypeShape EntityType="GloaithNationalModel.SalesOrderHeader" Width="1.5" PointX="6" PointY="6.875" />
+        <EntityTypeShape EntityType="GloaithNationalModel.Log" Width="1.5" PointX="0.75" PointY="8.75" />
+        <AssociationConnector Association="GloaithNationalModel.FK_CustomerAddress_Address_AddressID" />
+        <AssociationConnector Association="GloaithNationalModel.FK_SalesOrderHeader_Address_BillTo_AddressID" />
+        <AssociationConnector Association="GloaithNationalModel.FK_SalesOrderHeader_Address_ShipTo_AddressID" />
+        <AssociationConnector Association="GloaithNationalModel.FK_CustomerAddress_Customer_CustomerID" />
+        <AssociationConnector Association="GloaithNationalModel.FK_SalesOrderHeader_Customer_CustomerID" />
+        <AssociationConnector Association="GloaithNationalModel.FK_Product_ProductCategory_ProductCategoryID" />
+        <AssociationConnector Association="GloaithNationalModel.FK_Product_ProductModel_ProductModelID" />
+        <AssociationConnector Association="GloaithNationalModel.FK_SalesOrderDetail_Product_ProductID" />
+        <AssociationConnector Association="GloaithNationalModel.FK_ProductCategory_ProductCategory_ParentProductCategoryID_ProductCategoryID" />
+        <AssociationConnector Association="GloaithNationalModel.FK_ProductModelProductDescription_ProductDescription_ProductDescriptionID" />
+        <AssociationConnector Association="GloaithNationalModel.FK_ProductModelProductDescription_ProductModel_ProductModelID" />
+        <AssociationConnector Association="GloaithNationalModel.FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID" />
+        <EntityTypeShape EntityType="GloaithNationalModel.ProductTransaction" Width="1.75" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="GloaithNationalModel.Rate" Width="1.75" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="GloaithNationalModel.Currency" Width="1.5" PointX="0.75" PointY="3.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
